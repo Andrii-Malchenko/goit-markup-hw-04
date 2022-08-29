@@ -134,6 +134,10 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-color-text);
+    fill: currentColor;
+    display: flex;
+    align-items: center;
+
 }
 
 .contact-mail:hover,
@@ -152,11 +156,18 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--secondary-color-text);
+    fill: currentColor;
+    display: flex;
+    align-items: center;
 }
 
 .contact-phone:hover,
 .contact-phone:focus {
     color: var(--accent);
+}
+
+.icon-contacts{
+    margin-right: 10px;
 }
 
 .page-header-container {
@@ -297,7 +308,9 @@ body {
     margin-bottom: 10px;
 }
 
-.benefits-list-item {}
+.benefits-list-item {
+
+}
 
 .benefits-list-text {
     font-family: 'Roboto', sans-serif;
@@ -467,11 +480,12 @@ body {
 .clients-list-link:hover .clients-list-icon,
 .clients-list-link:focus .clients-list-icon {
     fill: var(--accent);
+    border-color: var(--accent);
 }
 
 
 .clients-list-icon {
-    fill: var(--icon-color);
+    fill: currentColor;
 }
 
 /* Footer */
@@ -591,6 +605,11 @@ body {
 
 .icon-footer {
     fill: var(--white-color);
+}
+
+.footer-box{
+    display: flex;
+    align-items: baseline;
 }
 
 
