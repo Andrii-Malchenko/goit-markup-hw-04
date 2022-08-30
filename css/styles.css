@@ -1,3 +1,13 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::before, 
+*::after{
+    box-sizing: inherit;
+}
+
 :root {
     --main-color-text: #212121;
     --secondary-color-text: #757575;
@@ -13,6 +23,7 @@
     --portfolio-border: #EEEEEE;
     --icon-color: #AFB1B8;
 }
+
 
 .link {
     text-decoration: none;
@@ -71,6 +82,7 @@ img {
 
 /* Body */
 body {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: var(--white-color);
     color: var(--main-color-text);
@@ -308,9 +320,6 @@ body {
     margin-bottom: 10px;
 }
 
-.benefits-list-item {
-
-}
 
 .benefits-list-text {
     font-family: 'Roboto', sans-serif;
@@ -403,12 +412,14 @@ body {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .social-list {
     display: flex;
     justify-content: center;
     column-gap: 10px;
+    margin-top: 16px;
 }
 
 .social-list-link {
@@ -419,7 +430,6 @@ body {
     height: 44px;
     border-radius: 50%;
     background-color: var(--white-color);
-    margin-top: 16px;
 }
 
 .social-list-icon {
@@ -444,6 +454,7 @@ body {
 .clients {
     text-align: center;
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .clients-title {
@@ -457,7 +468,6 @@ body {
     display: flex;
     justify-content: center;
     column-gap: 30px;
-    margin-bottom: 94px;
 }
 
 .clients-link {
@@ -477,9 +487,9 @@ body {
     border-radius: 4px;
 }
 
-.clients-list-link:hover .clients-list-icon,
-.clients-list-link:focus .clients-list-icon {
-    fill: var(--accent);
+.clients-list-link:hover,
+.clients-list-link:focus{
+    color: var(--accent);
     border-color: var(--accent);
 }
 
@@ -635,6 +645,8 @@ body {
 .portfolio-filter-button:focus {
     background-color: var(--accent);
     color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-title {
@@ -670,8 +682,14 @@ body {
     gap: 30px;
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-item-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
